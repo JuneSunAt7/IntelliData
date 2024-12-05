@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionUpload"/>
+    <addaction name="actionExport_graphs"/>
+   </widget>
+   <widget class="QMenu" name="menuAnalyze">
+    <property name="title">
+     <string>Analyze</string>
+    </property>
+    <addaction name="actionRun_new_analyze"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionParameters"/>
+    <addaction name="actionVisual_parameters"/>
+   </widget>
+   <widget class="QMenu" name="menuNeuro">
+    <property name="title">
+     <string>Neuro</string>
+    </property>
+    <widget class="QMenu" name="menuChange_network">
+     <property name="title">
+      <string>Change network</string>
+     </property>
+     <addaction name="actionNetwork_1"/>
+     <addaction name="actionNetwork_2"/>
+     <addaction name="actionNetwork_3"/>
+    </widget>
+    <addaction name="actionRun_neuro_analyze"/>
+    <addaction name="menuChange_network"/>
+    <addaction name="actionClear_model"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAnalyze"/>
+   <addaction name="menuNeuro"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionUpload">
+   <property name="text">
+    <string>Upload</string>
+   </property>
+  </action>
+  <action name="actionExport_graphs">
+   <property name="text">
+    <string>Export graphs</string>
+   </property>
+  </action>
+  <action name="actionRun_new_analyze">
+   <property name="text">
+    <string>Run new analyze</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionParameters">
+   <property name="text">
+    <string>Parameters</string>
+   </property>
+  </action>
+  <action name="actionVisual_parameters">
+   <property name="text">
+    <string>Visual parameters</string>
+   </property>
+  </action>
+  <action name="actionRun_neuro_analyze">
+   <property name="text">
+    <string>Run neuro analyze</string>
+   </property>
+  </action>
+  <action name="actionClear_model">
+   <property name="text">
+    <string>Clear model</string>
+   </property>
+  </action>
+  <action name="actionNetwork_1">
+   <property name="text">
+    <string>Network #1</string>
+   </property>
+  </action>
+  <action name="actionNetwork_2">
+   <property name="text">
+    <string>Network #2</string>
+   </property>
+  </action>
+  <action name="actionNetwork_3">
+   <property name="text">
+    <string>Network #3</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
